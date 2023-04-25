@@ -1,12 +1,8 @@
 <h1>Vice Versa</h1>
-<form>
-    <textarea id="myTextarea" rows="10" cols="50\">
+<form action="{% url 'reverse' %}">
+    <textarea rows="10" cols="50\" name="usertext">
     </textarea>
+    <br><br>
+    <input type="submit" value="Reverse!">
+    
 </form>
-    <button onclick="myFunction()">revers</button>
-    <script>
-    function myFunction() {
-        var input = document.getElementById("myTextarea").value;
-        alert("Ви ввели: " + input);
-    }
-    </script>
